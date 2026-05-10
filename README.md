@@ -46,21 +46,18 @@ Finance teams spend significant time chasing overdue payments. Manual follow-ups
 ### Prerequisites
 
 - Python 3.10+
-- Node.js 18+ (for `pptxgenjs` if needed)
 - A free [Groq API key](https://console.groq.com) — 14,400 req/day, no credit card required
 
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/your-org/credit-agent.git
-cd credit-agent
+git clone https://github.com/YA-shiKa/Finance-Credit-Follow-Up-Email-Agent.git
 pip install -r requirements.txt
 ```
 
 ### 2. Configure environment
 
 ```bash
-cp .env.example .env
 # Edit .env and set at minimum:
 #   GROQ_API_KEY=gsk_...
 ```
@@ -78,12 +75,6 @@ Open [http://localhost:8501](http://localhost:8501), go to the **Dashboard** tab
 ```bash
 # Dry run (default — safe, no real emails sent)
 python run_agent.py --csv data/invoices.csv
-
-# Live SMTP send (configure SMTP_* vars in .env first)
-python run_agent.py --csv data/invoices.csv --send
-
-# Limit to first 10 records, 0.5s delay between API calls
-python run_agent.py --csv data/invoices.csv --batch 10 --delay 0.5
 ```
 
 ### CSV Format
