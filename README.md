@@ -301,10 +301,6 @@ The LLM is prompted to return a strict JSON object. The response is parsed with 
 - `Message-ID` generated per-message with `make_msgid()` for DKIM compatibility
 - `Reply-To` locked to verified sender domain
 - STARTTLS (port 587) or SSL (port 465) enforced — plaintext SMTP not supported
-- Production checklist documented in code:
-  - ✅ SPF — `"v=spf1 include:_spf.google.com ~all"`
-  - ✅ DKIM — enable in Gmail/SendGrid dashboard
-  - ✅ DMARC — `"v=DMARC1; p=quarantine; rua=mailto:dmarc@acmefinance.in"`
 
 ---
 
@@ -423,5 +419,4 @@ LangGraph automatically emits spans for each node when tracing is enabled.
 
 ---
 
-*Finance Credit Follow-Up Email Agent v3.0 — LangGraph Edition*
-*Built for the AI Agent Prototype submission.*
+*Finance Credit Follow-Up Email Agent*
