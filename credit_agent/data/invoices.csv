@@ -1,0 +1,8 @@
+invoice_no,client_name,client_email,amount,due_date,follow_up_count,days_overdue
+INV-2024-001,Rajesh Kapoor,rajesh@example.com,45000,2025-04-20,0,5
+INV-2024-002,Priya Sharma,priya@techcorp.in,128000,2025-04-12,1,13
+INV-2024-003,Amit Verma,amit@buildzone.co,72500,2025-04-05,2,18
+INV-2024-004,Neha Singh,neha@globaltraders.com,310000,2025-03-28,3,25
+INV-2024-005,Suresh Mehta,suresh@metaindustries.in,89000,2025-03-15,4,38
+INV-2024-006,Kavya Nair,kavya@softedge.io,15000,2025-04-22,0,3
+INV-2024-007,Rohan Das,rohan@nexaworks.com,54000,2025-04-08,1,17
