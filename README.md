@@ -410,9 +410,9 @@ The `send_or_dryrun` node is designed as a named LangSmith / Langfuse checkpoint
 
 ```bash
 pip install langsmith
-export LANGCHAIN_API_KEY=ls_...
-export LANGCHAIN_TRACING_V2=true
-export LANGCHAIN_PROJECT=credit-agent
+LANGCHAIN_API_KEY=ls_...
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_PROJECT=credit-agent
 ```
 
 LangGraph automatically emits spans for each node when tracing is enabled.
